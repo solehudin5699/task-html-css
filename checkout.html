@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: block;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.4);
+            font-family: 'Airbnb Cereal App Light';
+
+        }
+
+        /* Modal Content/Box */
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 35vw;
+        }
+
+        .modal .col {
+            margin: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .modal .col:nth-child(even) {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <img src="./assets/icons/list.svg" alt="" width="40%" height="40%" title="Bootstrap">
+        </div>
+        <div class="title-foods">
+            <h5>Food Items</h5>
+            <img src="./assets/icons/search.svg" alt="">
+        </div>
+        <div class="title-cart">
+            <h5>Cart<span style="background-color:#57CAD5;color: white ;border-radius: 30px;padding:0px 8px;">3</span>
+            </h5>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <nav class="nav-item">
+            <img src="./assets/image/fork.png" alt="">
+            <img src="./assets/image/clipboard.png" alt="">
+            <img src="./assets/image/add.png" alt="">
+        </nav>
+
+        <main class="container ">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/jeremy-ricketts-6ZnhM-xBpos-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Espresso</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp 10.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 ">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/bear.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay" style="text-align: center;padding-top: 25%;">
+                            <img src="assets/image/ceklis.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Coffe Latte</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 15.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 ">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/firdaus-roslan-pN769u0KHNA-unsplash.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Cappucino</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 5.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/redvelvet.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Red Velvet Latte</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 33.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/chocorum.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Choco Rhum</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 28.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/blackforest.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay" style="text-align: center;padding-top: 25%;">
+                            <img src="assets/image/ceklis.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Black Forest</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 30.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/chickenkatsu.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Chicken Katsu Dabu-dabu</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 60.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/salmon.jpg" class="card-img-top" alt="...">
+                        <div class="card-img-overlay" style="text-align: center;padding-top: 25%;">
+                            <img src="assets/image/ceklis.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Salmon Truffle Teriyaki</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 60.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 d-flex justify-content-center">
+                    <div class="card bg-transparent">
+                        <img src="assets/image/wiener.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title" style="margin: 0;">Wiener Schnitzel</p>
+                            <p class="card-text font-weight-bold" style="margin: 0;">Rp. 69.000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside>
+            <div class="aside-items">
+
+                <div id="item">
+                    <div id="col1">
+                        <img src="assets/image/firdaus-roslan-pN769u0KHNA-unsplash.jpg" alt="">
+                    </div>
+                    <div id="col2">
+                        <h6>Coffe Latte</h6>
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="col3">Rp. 15.000</div>
+                </div>
+                <div id="item">
+                    <div id="col1">
+                        <img src="assets/image/blackforest.jpg" alt="">
+                    </div>
+                    <div id="col2">
+                        <h6>Black Forest</h6>
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="col3">Rp. 30.000</div>
+                </div>
+                <div id="item">
+                    <div id="col1">
+                        <img src="assets/image/salmon.jpg" alt="">
+                    </div>
+                    <div id="col2">
+                        <h6>Salmon Truffle</h6>
+                        <table>
+                            <tr>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>+</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="col3">Rp. 60.000</div>
+                </div>
+
+            </div>
+            <div class="aside-bottom">
+                <div id="total-item">
+                    <div id="total">
+                        <h6>Total</h6>
+                        <p>*Belum termasuk PPN</p>
+                    </div>
+                    <div id="total-value">
+                        <h6>Rp. 105.000*</h6>
+                    </div>
+                </div>
+                <button id="checkout">Checkout</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </aside>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="content-wrapper">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col">Checkout</div>
+                    <div class="col">Receipt no:#010410919</div>
+                </div>
+                <div class="row" style="margin-bottom: 30px;">
+                    <div class="col" style="font-size: 10px;margin-top:-5px;">Cashier : Pevita Pearce
+                    </div>
+                    <div class="col"></div>
+                </div>
+                <div class="row">
+                    <div class="col">Coffe Latte 1x</div>
+                    <div class="col">Rp. 15.000</div>
+                </div>
+                <div class="row">
+                    <div class="col">Black Forest 1x</div>
+                    <div class="col">Rp. 30.000</div>
+                </div>
+                <div class="row">
+                    <div class="col">Salmon Truffle Teriyaki 1x</div>
+                    <div class="col">Rp. 60.000</div>
+                </div>
+                <div class="row">
+                    <div class="col">Ppn 10%</div>
+                    <div class="col">Rp. 10.500</div>
+                </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">Total: Rp. 115.500</div>
+                </div>
+                <div class="row">
+                    <div class="col">Payment: Cash</div>
+                    <div class="col"></div>
+                </div>
+                <button id="print" style="border-radius: 7px;margin-top: 15px;margin-bottom: 1px;">Print</button>
+                <h6 style="text-align: center;font-weight: bold"><a style="color: black;" href="add-data.html">Or</a>
+                </h6>
+                <button id="send-email" style="border-radius: 7px;margin-top: 1px;">Send Email</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
